@@ -1,0 +1,203 @@
+[gd_scene load_steps=20 format=3 uid="uid://dhqaa16n76icn"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_wd6wh"]
+[ext_resource type="Script" path="res://Foot.gd" id="2_8v071"]
+[ext_resource type="Script" path="res://Hand.gd" id="3_0mbgd"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_55twm"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hu02f"]
+points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607, 0.498884, 0.169713, 0.559144, 0.464172, 0.231051, -0.803591, 0.320455, 0.40741, 0.651043, -0.243523, -0.482789, 0.594843, 0.0822132, -0.362868, -0.682312, 0.289697, 0.469044, -0.654529, -0.0662713, -0.127444, 0.842701, -0.338103, -0.393435, -0.683942, -0.244717, 0.438255, 0.623309, 0.200849, 0.0841477, 0.977454, 0.114795, -0.0682023, -0.976458, -0.12927, 0.20055, -0.563129, -0.451454, -0.185527, 0.595453, -0.453475, -0.273363, 0.592268, 0.407754, -0.00693649, -0.476823, 0.49966, 0.375821, -0.588614, 0.316955, 0.111579, 0.563059, -0.481177, -0.41725, 0.527866, -0.270497, -0.484546, -0.596972, -0.0665097, -0.279747, 0.908561, 0.0533361, -0.250197, -0.880712, 0.205319, 0.263647, -0.902771, -0.127394, 0.293368, 0.871526, -0.157196, 0.373412, -0.526319, -0.328246, 0.499663, 0.476641, -0.00688856, 0.0531056, 0.875001, 0.324703, -0.154543, -0.590854, 0.465879, -0.0972799, -0.782358, -0.398188, -0.387649, -0.498171, 0.31565, -0.30068, -0.587995, -0.388901)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_arosf"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_v1dn2"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nqyp3"]
+points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607, 0.498884, 0.169713, 0.559144, 0.464172, 0.231051, -0.803591, 0.320455, 0.40741, 0.651043, -0.243523, -0.482789, 0.594843, 0.0822132, -0.362868, -0.682312, 0.289697, 0.469044, -0.654529, -0.0662713, -0.127444, 0.842701, -0.338103, -0.393435, -0.683942, -0.244717, 0.438255, 0.623309, 0.200849, 0.0841477, 0.977454, 0.114795, -0.0682023, -0.976458, -0.12927, 0.20055, -0.563129, -0.451454, -0.185527, 0.595453, -0.453475, -0.273363, 0.592268, 0.407754, -0.00693649, -0.476823, 0.49966, 0.375821, -0.588614, 0.316955, 0.111579, 0.563059, -0.481177, -0.41725, 0.527866, -0.270497, -0.484546, -0.596972, -0.0665097, -0.279747, 0.908561, 0.0533361, -0.250197, -0.880712, 0.205319, 0.263647, -0.902771, -0.127394, 0.293368, 0.871526, -0.157196, 0.373412, -0.526319, -0.328246, 0.499663, 0.476641, -0.00688856, 0.0531056, 0.875001, 0.324703, -0.154543, -0.590854, 0.465879, -0.0972799, -0.782358, -0.398188, -0.387649, -0.498171, 0.31565, -0.30068, -0.587995, -0.388901)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_tcpvi"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kvcn8"]
+points = PackedVector3Array(0.457871, 0.198079, 0.0157824, -0.48874, -0.0916874, -0.0451868, -0.471509, -0.137027, -0.0907015, 0.0763591, -0.333275, 0.364179, 0.136569, -0.332425, -0.346906, -0.151617, 0.471982, -0.0602459, -0.105347, 0.211936, 0.43966, -0.0450169, 0.198098, -0.456416, 0.409077, -0.151168, 0.242516, -0.271376, -0.377761, 0.181871, 0.41148, -0.075981, -0.27324, 0.198197, -0.456161, -0.044931, -0.240641, -0.331674, -0.285768, 0.227137, 0.25672, 0.363041, 0.227522, 0.423604, -0.135488, -0.37899, 0.0607022, 0.319462, -0.406747, 0.181049, -0.225691, -0.0146313, -0.0917695, 0.490229, -0.377855, 0.302793, 0.121712, 0.0462323, 0.456011, 0.198185, -0.227464, -0.0607863, -0.440348, 0.228455, 0.0607228, -0.439887, -0.0911376, -0.489246, -0.045174, 0.441865, -0.228216, -0.0449581, 0.317179, 0.241214, -0.300812, -0.0448487, 0.394737, -0.302955, -0.316348, -0.196222, 0.332551, 0.198442, -0.0304293, 0.457237, 0.0614714, -0.152246, -0.471307, 0.363089, 0.256708, 0.227079, 0.152134, -0.439489, 0.182379, -0.210725, 0.362276, 0.27223)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_drcif"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4mkdy"]
+orientation = 2
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_y53v4"]
+data = PackedVector3Array(1, -1, 0, -1, -1, 0, 1, 1, 0, -1, -1, 0, -1, 1, 0, 1, 1, 0)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_aatj6"]
+flip_faces = true
+orientation = 2
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4lb4m"]
+data = PackedVector3Array(-1, -1, 0, 1, -1, 0, 1, 1, 0, -1, 1, 0, -1, -1, 0, 1, 1, 0)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wo1yy"]
+orientation = 0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ifp1b"]
+data = PackedVector3Array(0, -1, -1, 0, -1, 1, 0, 1, -1, 0, -1, 1, 0, 1, 1, 0, 1, -1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_j0oeq"]
+flip_faces = true
+orientation = 0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_82stb"]
+data = PackedVector3Array(0, -1, 1, 0, -1, -1, 0, 1, -1, 0, 1, 1, 0, -1, 1, 0, 1, -1)
+
+[node name="Player" type="CharacterBody3D"]
+collision_layer = 2
+script = ExtResource("1_wd6wh")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+visible = false
+layers = 2
+mesh = SubResource("CapsuleMesh_55twm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.1, 0, 0, 0, 0.65, 0, 1.1, 0)
+shape = SubResource("ConvexPolygonShape3D_hu02f")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.59781, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 3)
+
+[node name="Body" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8, 0, 0, 0, 0.7, 0, 1.5, 0)
+mesh = SubResource("CapsuleMesh_arosf")
+
+[node name="Hands" type="Node3D" parent="."]
+
+[node name="Right Hand" type="CharacterBody3D" parent="Hands"]
+transform = Transform3D(0.25, 0, 0, 0, 0.2, 0, 0, 0, 0.15, 0.8, 1.6, -0.3)
+collision_layer = 16
+collision_mask = 32
+script = ExtResource("3_0mbgd")
+Hand = 1
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Hands/Right Hand"]
+mesh = SubResource("CapsuleMesh_v1dn2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hands/Right Hand"]
+shape = SubResource("ConvexPolygonShape3D_nqyp3")
+
+[node name="RightHandRay" type="RayCast3D" parent="Hands/Right Hand"]
+target_position = Vector3(0, 0, -5)
+collision_mask = 32
+hit_from_inside = true
+
+[node name="Interact Node" type="Marker3D" parent="Hands/Right Hand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Left Hand" type="CharacterBody3D" parent="Hands"]
+transform = Transform3D(0.25, 0, 0, 0, 0.2, 0, 0, 0, 0.15, -0.8, 1.6, -0.3)
+collision_layer = 16
+collision_mask = 32
+script = ExtResource("3_0mbgd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Hands/Left Hand"]
+mesh = SubResource("CapsuleMesh_v1dn2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hands/Left Hand"]
+shape = SubResource("ConvexPolygonShape3D_nqyp3")
+
+[node name="LeftHandRay" type="RayCast3D" parent="Hands/Left Hand"]
+target_position = Vector3(0, 0, -5)
+collision_mask = 32
+hit_from_inside = true
+
+[node name="Interact Node" type="Marker3D" parent="Hands/Left Hand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Feet" type="Node3D" parent="."]
+
+[node name="Right Foot" type="CharacterBody3D" parent="Feet"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.4, 0.1, 0)
+top_level = true
+collision_layer = 4
+collision_mask = 9
+script = ExtResource("2_8v071")
+Foot = 1
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Feet/Right Foot"]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_tcpvi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Feet/Right Foot"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.4, 0.1, 0)
+shape = SubResource("ConvexPolygonShape3D_kvcn8")
+
+[node name="Left Foot" type="CharacterBody3D" parent="Feet"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.4, 0.1, 0)
+top_level = true
+collision_layer = 4
+collision_mask = 9
+script = ExtResource("2_8v071")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Feet/Left Foot"]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_drcif")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Feet/Left Foot"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.4, 0.1, 0)
+shape = SubResource("ConvexPolygonShape3D_kvcn8")
+
+[node name="Footbox" type="Node3D" parent="Feet"]
+visible = false
+
+[node name="Footbox1" type="MeshInstance3D" parent="Feet/Footbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+mesh = SubResource("PlaneMesh_4mkdy")
+skeleton = NodePath("../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Feet/Footbox/Footbox1"]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Feet/Footbox/Footbox1/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_y53v4")
+
+[node name="Footbox2" type="MeshInstance3D" parent="Feet/Footbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = SubResource("PlaneMesh_aatj6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Feet/Footbox/Footbox2"]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Feet/Footbox/Footbox2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4lb4m")
+
+[node name="Footbox3" type="MeshInstance3D" parent="Feet/Footbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = SubResource("PlaneMesh_wo1yy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Feet/Footbox/Footbox3"]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Feet/Footbox/Footbox3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_ifp1b")
+
+[node name="Footbox4" type="MeshInstance3D" parent="Feet/Footbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = SubResource("PlaneMesh_j0oeq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Feet/Footbox/Footbox4"]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Feet/Footbox/Footbox4/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_82stb")
+
+[connection signal="LeftControls" from="." to="Hands/Left Hand" method="MoveHand"]
+[connection signal="LeftControls" from="." to="Feet/Left Foot" method="MoveFoot"]
+[connection signal="RightControls" from="." to="Hands/Right Hand" method="MoveHand"]
+[connection signal="RightControls" from="." to="Feet/Right Foot" method="MoveFoot"]

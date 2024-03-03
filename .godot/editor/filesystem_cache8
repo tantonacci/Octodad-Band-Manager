@@ -1,0 +1,9 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1709416985
+Foot.gd::GDScript::-1::1709408379::0::1::::<>CharacterBody3D<>::
+Hand.gd::GDScript::-1::1709416451::0::1::::<>CharacterBody3D<>::
+icon.svg::CompressedTexture2D::1347447419683258840::1709337561::1709337568::1::::<><>::
+Player.gd::GDScript::-1::1709409831::0::1::::<>CharacterBody3D<>::
+Player.tscn::PackedScene::7683615414741177929::1709416965::0::1::::<><>::res://Player.gd<>res://Foot.gd<>res://Hand.gd
+test_rect.tscn::PackedScene::5866133868054054929::1709416964::0::1::::<><>::
+world.tscn::PackedScene::6091841528145961611::1709416965::0::1::::<><>::uid://dhqaa16n76icn::::res://Player.tscn<>uid://cptumreg4m5qj::::res://test_rect.tscn

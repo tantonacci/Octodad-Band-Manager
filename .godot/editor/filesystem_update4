@@ -1,0 +1,7 @@
+res://world.tscn
+res://Player.tscn
+res://test_rect.tscn
+res://Hand.gd
+res://3D Outline/Outline.material
+res://interactable.tscn
+res://Signals.gd

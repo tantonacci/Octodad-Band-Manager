@@ -1,0 +1,12 @@
+Marker3D
+WorldEnvironment
+Node3D
+RayCast3D
+MeshInstance3D
+RigidBody3D
+CharacterBody3D
+CollisionPolygon3D
+StaticBody3D
+CollisionShape3D
+Camera3D
+DirectionalLight3D
